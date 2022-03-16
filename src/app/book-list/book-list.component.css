@@ -1,0 +1,8 @@
+.book-holder {
+    float: left;
+    width: 25%;
+}
+
+.book-holder img {
+    width: 100%;
+}
