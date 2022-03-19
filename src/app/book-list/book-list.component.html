@@ -1,12 +1,15 @@
 <section>
-    <div class="book-holder">
-        <div *ngFor="let book of books" class="book-item">
-            <div class="book-img">
+    <div class="container">
+        <mat-card class="book-holder" *ngFor="let book of books">
+            <div class="book-title">
+                <mat-card-title class="title">{{book.title}}</mat-card-title>
+                <mat-card-subtitle>{{book.author}}</mat-card-subtitle>
+                <button mat-raised-button style="background-color: #d9534f; font-weight: bolder; color: white">+</button>
+                <button mat-raised-button style="background-color: #5cb85c; color: white">✓</button>
+            </div>
+            <div class="book-image">
                 <img src="../../assets/{{book.imageLink}}" alt="{{book.title}}">
             </div>
-            <div class="book-detail">
-                {{book.title}}
-            </div>
-        </div>
+        </mat-card> 
     </div>
 </section>

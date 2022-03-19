@@ -1,0 +1,32 @@
+header {
+    background-color: #3366BB;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo {
+    cursor: pointer;
+    font-family: Roboto Slab, sans-serif;
+    font-size: larger;
+    margin: auto 50px;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+}
+
+.lists div {
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lists div:hover {
+    background-color: #3b3b3b;
+}

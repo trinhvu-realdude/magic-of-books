@@ -1,8 +1,50 @@
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
 .book-holder {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    min-width: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
     float: left;
     width: 25%;
 }
 
-.book-holder img {
-    width: 100%;
+.book-image {
+    width: 50%;
+    margin-right: 15px;
+}
+
+.book-image img {
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.title {
+    line-height: 25px;
+}
+
+.book-title button {
+    cursor: pointer;
+    opacity: 0;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.book-holder:hover img {
+    background-color: bisque;
+    transform: scale(1.05);
+    transition: background 0.75s, transform 0.75s;
+    box-shadow: 5px 5px 5px #585454;
+}
+
+.book-holder:hover button {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
