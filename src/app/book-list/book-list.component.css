@@ -3,6 +3,7 @@
     width: 80%;
 }
 .book-holder {
+    position: relative;
     display: flex;
     justify-content: space-between;
     border: 1px solid gray;
@@ -35,6 +36,12 @@
     opacity: 0;
     margin: 5px;
     transition: 0.5s;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
 }
 
 .book-holder:hover img {

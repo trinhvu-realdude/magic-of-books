@@ -9,12 +9,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookListComponent } from './book-list/book-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { WishListComponent } from './wish-list/wish-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookListComponent,
     NavbarComponent,
+    WishListComponent,
   ],
   imports: [
     BrowserModule,

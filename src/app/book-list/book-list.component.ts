@@ -7,10 +7,11 @@ export class BookListComponent implements OnInit {
     books : any;
 
     constructor(private config : ConfigComponent) {
-        this.showBooks();
     }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.showBooks();
+    }
 
     showBooks() {
         this.config.getBooks().subscribe(data => {
